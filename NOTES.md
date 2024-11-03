@@ -10,3 +10,8 @@
 ### Next Steps
 - Generate simulation data using MATLAB
 - Implement basic PINN framework
+
+### Gray-Scott Simulations
+- Successfully generated first dataset using Chebfun
+- Pattern formation visible at t=2.0
+- Need to explore different parameter regimes
