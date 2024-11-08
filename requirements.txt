@@ -3,3 +3,9 @@ numpy>=1.24.0
 scipy>=1.10.0
 matplotlib>=3.7.0
 h5py>=3.8.0
+
+# Data loading
+h5py>=3.8.0
+
+# For MATLAB integration (optional)
+# MATLAB R2021a or later required for Chebfun
