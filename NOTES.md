@@ -15,3 +15,12 @@
 - Successfully generated first dataset using Chebfun
 - Pattern formation visible at t=2.0
 - Need to explore different parameter regimes
+
+### Pattern Formation Observations
+Different parameter regimes produce distinct patterns:
+- Spots: Localized structures
+- Stripes: Anisotropic formations  
+- Mixed: Transition regimes
+- Chaotic: Sensitive dynamics
+
+Next: Systematic parameter sweep
