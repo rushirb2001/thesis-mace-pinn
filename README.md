@@ -4,16 +4,20 @@ Research project exploring neural network approaches for solving coupled PDEs.
 
 ## Current Focus
 - Gray-Scott reaction-diffusion model
-- Ginzburg-Landau equation
-- Neural network architectures for PDE solving
+- Pattern formation dynamics (spots, stripes, chaos)
+- Data generation using MATLAB/Chebfun
 
 ## Structure
-- `data/` - Simulation data (.mat files) and results
-- `src/` - Data generation scripts and model implementations
+- `data/` - Simulation outputs (.mat files) and results
+- `src/data_generation/` - MATLAB scripts for PDE simulations
 - `notebooks/` - Experimental notebooks
+
+## Data Generation
+Requires MATLAB with Chebfun package for spectral methods.
 
 ## Dependencies
 - Python 3.8+
 - PyTorch
 - NumPy, SciPy, Matplotlib
-- MATLAB (for data generation)
+- h5py
+- MATLAB R2021a+ (for data generation)
