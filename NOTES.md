@@ -24,3 +24,15 @@ Different parameter regimes produce distinct patterns:
 - Chaotic: Sensitive dynamics
 
 Next: Systematic parameter sweep
+
+## December 2024
+
+### PINN Architecture Research
+- Raissi et al. 2019: Original PINN formulation
+- Loss function: PDE residual + boundary conditions + initial conditions
+- Automatic differentiation for computing derivatives
+
+### Challenges
+- Spectral bias in vanilla MLPs
+- Stiff gradient dynamics for coupled PDEs
+- Need for better input encoding
