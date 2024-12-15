@@ -36,3 +36,9 @@ Next: Systematic parameter sweep
 - Spectral bias in vanilla MLPs
 - Stiff gradient dynamics for coupled PDEs
 - Need for better input encoding
+
+### Neural Network Framework Selection
+Exploring options:
+- PyTorch: Most common, good autodiff
+- JAX: Functional, better for scientific computing
+- Considerations: Need automatic differentiation for PDE residuals
