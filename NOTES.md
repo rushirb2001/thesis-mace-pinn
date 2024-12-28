@@ -42,3 +42,14 @@ Exploring options:
 - PyTorch: Most common, good autodiff
 - JAX: Functional, better for scientific computing
 - Considerations: Need automatic differentiation for PDE residuals
+
+### Progress Summary (End 2024)
+- Generated Gray-Scott simulation data with various parameter regimes
+- Implemented MATLAB data loading utilities
+- Reviewed PINN literature and architectures
+- Considering JAX/FLAX for implementation
+
+### Next Steps (Jan 2025)
+- Decide on framework (leaning toward JAX)
+- Implement first working PINN
+- Test on Gray-Scott benchmark data
