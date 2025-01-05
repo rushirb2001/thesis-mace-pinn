@@ -53,3 +53,19 @@ Exploring options:
 - Decide on framework (leaning toward JAX)
 - Implement first working PINN
 - Test on Gray-Scott benchmark data
+
+## January 2025
+
+### Framework Decision: JAX
+Selected JAX over PyTorch for:
+- Functional programming paradigm
+- Efficient automatic differentiation (jacfwd for Hessians)
+- GPU acceleration via XLA
+- Clean gradient computation for PDE residuals
+
+Using jax.example_libraries.stax for network definitions
+
+### Architecture Ideas
+- Separate subnetworks for u and v (parallel learning)
+- SIREN activation (periodic sine functions)
+- Fourier feature embeddings for spectral bias
