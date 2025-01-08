@@ -1,11 +1,16 @@
-torch>=2.0.0
+# Core dependencies
+jax[cuda12]>=0.4.20
+jaxlib>=0.4.20
+optax>=0.1.7
 numpy>=1.24.0
 scipy>=1.10.0
+
+# Data and visualization
+h5py>=3.8.0
 matplotlib>=3.7.0
-h5py>=3.8.0
 
-# Data loading
-h5py>=3.8.0
+# Experiment tracking
+wandb>=0.15.0
 
-# For MATLAB integration (optional)
-# MATLAB R2021a or later required for Chebfun
+# Progress bars
+tqdm>=4.65.0
