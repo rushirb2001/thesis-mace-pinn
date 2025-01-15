@@ -69,3 +69,28 @@ Using jax.example_libraries.stax for network definitions
 - Separate subnetworks for u and v (parallel learning)
 - SIREN activation (periodic sine functions)
 - Fourier feature embeddings for spectral bias
+
+## January 2025
+
+### Architecture Research
+SIREN (Sitzmann et al. 2020):
+- Sine activations for coordinate-based functions
+- Special initialization: first layer ~U(-1/ω₀, 1/ω₀)
+- Hidden layers: ~U(-√(6/fan_in)/ω₀, √(6/fan_in)/ω₀)
+
+Fourier Features (Tancik et al. 2020):
+- Random Fourier features overcome spectral bias
+- Map (x,y,t) → [sin(2πBx), cos(2πBx)] where B~N(0,σ²)
+- P=64 dimensional embedding tested
+
+### Parallel Subnetwork Design
+Key insight: separate networks for u and v
+- Reduces gradient interference between coupled variables
+- Each network specializes on one component
+- Coupling enforced through PDE residual loss
+
+### Derivative Computation
+For Laplacian (u_xx + u_yy):
+- Use jax.jacfwd for efficient Hessian diagonal
+- Compute second derivatives per dimension
+- Vectorize over batch with vmap
