@@ -94,3 +94,15 @@ For Laplacian (u_xx + u_yy):
 - Use jax.jacfwd for efficient Hessian diagonal
 - Compute second derivatives per dimension
 - Vectorize over batch with vmap
+
+### Implementation Progress
+Derivative computation working with jacfwd:
+- First derivatives: ∇u = [u_x, u_y, u_t]
+- Second derivatives: [u_xx, u_yy, u_tt] (diagonal of Hessian)
+- Laplacian: Δu = u_xx + u_yy
+- Vectorized over collocation points with vmap
+
+Periodic boundary conditions:
+- Domain: [-1,1] × [-1,1]
+- Map: x → (x+1) mod 2 - 1
+- Ensures continuity at boundaries
