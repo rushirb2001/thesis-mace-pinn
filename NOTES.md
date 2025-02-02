@@ -106,3 +106,26 @@ Periodic boundary conditions:
 - Domain: [-1,1] × [-1,1]
 - Map: x → (x+1) mod 2 - 1
 - Ensures continuity at boundaries
+
+## February 2025
+
+### First Working PINN Implementation
+Architecture:
+- 5-layer SIREN (256 units each) with ω₀=30
+- Fourier embedding: P=64, d=3
+- Parallel subnetworks for u and v
+- Periodic boundary enforcement
+
+Loss components:
+- Initial condition loss
+- Boundary condition loss (redundant with periodic BC, but kept for generality)
+- PDE residual loss (Gray-Scott equations)
+
+Adaptive weighting (Kendall et al.):
+- log_sigma parameters for each loss term
+- Total loss: Σ [0.5*L_i/σ_i² + log(σ_i)]
+
+Training:
+- Adam optimizer with exponential decay
+- Learning rate: 1e-3 → 0.95 decay every 10k steps
+- WandB integration for tracking
