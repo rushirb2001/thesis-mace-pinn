@@ -129,3 +129,15 @@ Training:
 - Adam optimizer with exponential decay
 - Learning rate: 1e-3 → 0.95 decay every 10k steps
 - WandB integration for tracking
+
+### Architecture Experiments
+Testing deeper SIREN: 7 layers vs 5 layers
+- Hypothesis: more layers capture finer patterns
+- Observation: training becomes slower
+- Need to balance capacity vs computation
+
+### Architecture Experiments
+Testing deeper SIREN: 7 layers vs 5 layers
+- Hypothesis: more layers capture finer patterns
+- Observation: training becomes slower
+- Back to 5 layers with refined initialization
