@@ -141,3 +141,18 @@ Testing deeper SIREN: 7 layers vs 5 layers
 - Hypothesis: more layers capture finer patterns
 - Observation: training becomes slower
 - Back to 5 layers with refined initialization
+
+### Simplification Experiments
+Removed boundary condition loss:
+- Periodic BC already enforced via wrapping
+- BC loss was redundant and causing gradient issues
+- Now: IC loss + Residual loss only
+
+Architecture change:
+- Testing vanilla MLP (tanh activations) vs SIREN
+- 4-layer MLP: [128, 128, 128, 128, 1]
+- Simpler might be better for debugging
+
+Optimization insights:
+- Using jax.hessian for second derivatives
+- Direct computation of Laplacian components
