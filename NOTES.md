@@ -156,3 +156,18 @@ Architecture change:
 Optimization insights:
 - Using jax.hessian for second derivatives
 - Direct computation of Laplacian components
+
+### Gradient Norm Weighting
+New approach for loss balancing:
+- Compute gradient norms for each loss component
+- Weight inversely proportional to gradient magnitude
+- Prevents one loss term from dominating
+- Exponential moving average (α=0.9) for stability
+
+Separate weighting for u and v networks:
+- Each network may need different balance
+- Track gradient norms independently
+
+Also testing LBFGS optimizer:
+- Second-order method for better convergence
+- Slower per iteration but fewer total iterations needed
