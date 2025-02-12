@@ -171,3 +171,15 @@ Separate weighting for u and v networks:
 Also testing LBFGS optimizer:
 - Second-order method for better convergence
 - Slower per iteration but fewer total iterations needed
+
+### Fourier Embeddings Revisited
+Combining gradient weighting with Fourier features:
+- Random Fourier features: B~N(0, scale²)
+- Embedding dimension: 32 (16 sin + 16 cos)
+- Scale parameter: 2.0
+
+Architecture adjustments:
+- U network: [64, 64, 64, 1] (simpler with Fourier features)
+- V network: [128, 128, 128, 128, 1] (needs more capacity)
+
+JAX config: highest precision for matmul stability
