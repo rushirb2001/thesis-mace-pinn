@@ -183,3 +183,10 @@ Architecture adjustments:
 - V network: [128, 128, 128, 128, 1] (needs more capacity)
 
 JAX config: highest precision for matmul stability
+
+### Benchmark Framework Setup
+Starting systematic benchmarking:
+- Multiple parameter configurations
+- Tracking convergence metrics
+- Comparing different loss weightings
+- Need reproducible evaluation protocol
