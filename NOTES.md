@@ -190,3 +190,10 @@ Starting systematic benchmarking:
 - Tracking convergence metrics
 - Comparing different loss weightings
 - Need reproducible evaluation protocol
+
+### Benchmark Iterations v2-v5
+Testing variations:
+- Different collocation point sampling strategies
+- Adjusting data supervision amounts
+- Hyperparameter tuning for gradient weights
+- Loss component balance experiments
