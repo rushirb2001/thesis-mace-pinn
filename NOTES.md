@@ -197,3 +197,13 @@ Testing variations:
 - Adjusting data supervision amounts
 - Hyperparameter tuning for gradient weights
 - Loss component balance experiments
+
+### v6 Architecture Exploration
+Heavy experimentation with v6 variants:
+- v6: baseline with new loss formulation
+- v6a: adjusted residual loss weighting
+- v6b: modified data sampling strategy  
+- v6c: different optimizer settings
+- v6d: combined best practices from a,b,c
+
+This was a critical phase - testing many hypotheses
