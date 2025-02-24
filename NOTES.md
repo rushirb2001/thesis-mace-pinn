@@ -207,3 +207,15 @@ Heavy experimentation with v6 variants:
 - v6d: combined best practices from a,b,c
 
 This was a critical phase - testing many hypotheses
+
+### Final Benchmark Refinements v7-v12
+Progressive improvements:
+- v7-v9: stability improvements
+- v10: added better logging and metrics
+- v11: refined collocation sampling  
+- v12: final optimized version
+
+Key insights gained:
+- Gradient weighting needs careful tuning
+- Collocation point distribution matters significantly
+- Balance between IC/residual/data loss is problem-dependent
