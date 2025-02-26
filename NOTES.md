@@ -219,3 +219,9 @@ Key insights gained:
 - Gradient weighting needs careful tuning
 - Collocation point distribution matters significantly
 - Balance between IC/residual/data loss is problem-dependent
+
+### Residual Loss Focused Experiments
+Specialized experiments on residual loss:
+- Iterative residual loss computation
+- Different weighting schemes for residual terms
+- Testing impact of residual sampling density
