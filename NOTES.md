@@ -243,3 +243,17 @@ Next steps (March):
 - Move to Flax for better modularity
 - Test on Ginzburg-Landau equation
 - Prepare final implementation structure
+
+## March 2025
+
+### Transition to Flax
+Moving from Stax to Flax for better modularity:
+- Flax provides cleaner NN abstractions
+- Better state management
+- Easier to extend and modify architectures
+- Industry-standard framework
+
+Initial Flax implementations:
+- Porting MLP architecture
+- Testing compatibility with existing training loop
+- Validating results match Stax version
