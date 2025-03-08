@@ -257,3 +257,14 @@ Initial Flax implementations:
 - Porting MLP architecture
 - Testing compatibility with existing training loop
 - Validating results match Stax version
+
+### Production Code Structure
+Restructuring for clean implementation:
+- main.py: primary training script
+- Separate configs for Gray-Scott and Ginzburg-Landau
+- WandB integration for all experiments
+- Modular architecture design
+
+Testing both Gray-Scott and Ginzburg-Landau:
+- GLS adds complexity with complex-valued solutions
+- Need to handle real/imaginary components separately
