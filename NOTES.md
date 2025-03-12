@@ -268,3 +268,13 @@ Restructuring for clean implementation:
 Testing both Gray-Scott and Ginzburg-Landau:
 - GLS adds complexity with complex-valued solutions
 - Need to handle real/imaginary components separately
+
+### Architecture Variants
+Testing different architectures on both equations:
+- Standard MLP baseline
+- Gated architectures for better gradient flow
+- Comparing performance on Gray-Scott vs GLS
+
+Key finding: architecture choice matters more for GLS
+- Complex-valued PDEs benefit from gated units
+- Gray-Scott works well with simpler architectures
