@@ -1,23 +1,52 @@
 # Physics-Informed Neural Networks for Reaction-Diffusion Systems
 
-Research project exploring neural network approaches for solving coupled PDEs.
+Multi-Architecture Coupled Ensemble (MACE) PINN for solving coupled PDEs.
 
-## Current Focus
-- Gray-Scott reaction-diffusion model
-- Pattern formation dynamics (spots, stripes, chaos)
-- Data generation using MATLAB/Chebfun
+## Equations Studied
+- **Gray-Scott**: Reaction-diffusion system with pattern formation
+- **Ginzburg-Landau**: Complex-valued pattern-forming system
 
-## Structure
-- `data/` - Simulation outputs (.mat files) and results
-- `src/data_generation/` - MATLAB scripts for PDE simulations
-- `notebooks/` - Experimental notebooks
+## Key Features
+- Parallel subnetworks for coupled variables (u and v)
+- Fourier feature embeddings for spectral bias
+- Gradient norm-based adaptive loss weighting
+- JAX/Flax implementation for GPU acceleration
 
-## Data Generation
-Requires MATLAB with Chebfun package for spectral methods.
+## Project Structure
+```
+├── data/
+│   ├── input/mat/          # MATLAB simulation outputs
+│   ├── output/gif/         # Generated visualizations
+│   └── processed/h5/       # Processed datasets
+├── src/
+│   ├── models/             # Training scripts
+│   ├── config/             # Experiment configurations
+│   ├── visualization/      # Plotting utilities
+│   ├── processing/         # Data processing
+│   ├── legacy/             # Implementation evolution
+│   └── data_generation/    # MATLAB scripts
+├── experiments/            # Benchmark iterations
+└── notebooks/              # Jupyter notebooks
+```
 
-## Dependencies
+## Requirements
 - Python 3.8+
-- PyTorch
-- NumPy, SciPy, Matplotlib
-- h5py
+- JAX with CUDA support
+- Flax, Optax
 - MATLAB R2021a+ (for data generation)
+- WandB (for experiment tracking)
+
+## Usage
+```bash
+# Train on Gray-Scott
+python src/models/train_final.py
+
+# Train on Ginzburg-Landau
+python src/models/train_gls.py
+
+# Generate visualizations
+python src/visualization/generate_gifs.py
+```
+
+## Results
+Generated GIFs and comparison plots available in `data/output/`

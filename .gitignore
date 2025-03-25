@@ -8,7 +8,7 @@ __pycache__/
 dist/
 build/
 
-# Data files
+# Data files (large)
 *.mat
 *.h5
 *.hdf5
@@ -37,3 +37,9 @@ ENV/
 .idea/
 *.sublime-*
 
+# WandB
+wandb/
+
+# Archives
+*.zip
+*.7z
