@@ -346,3 +346,11 @@ Gray-Scott (variation 5):
 - Pattern formation captured accurately
 
 Next: Write thesis chapters, prepare final plots
+
+### Data Files Organization
+Adding generated data to repository structure:
+- MATLAB simulation outputs (.mat files)
+- Generated visualizations (GIFs)
+- Processed datasets (H5)
+
+Note: Large binary files tracked via git-lfs
