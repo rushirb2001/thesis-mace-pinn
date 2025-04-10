@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Multi-Architecture Coupled Ensemble Physics-Informed Neural Networks (MACE-PINN)"
+authors:
+  - family-names: "Bhavsar"
+    given-names: "Rushir"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Arizona State University"
+repository-code: "https://github.com/rushirb2001/thesis-mace-pinn"
+url: "https://keep.lib.asu.edu/items/201211"
+abstract: "This thesis presents Multi-Architecture Coupled Ensemble Physics-Informed Neural Networks (MACE-PINN), a novel approach for solving coupled partial differential equations. The method employs parallel subnetworks for each variable, Fourier feature embeddings to overcome spectral bias, and gradient norm-based adaptive loss weighting. Validated on Gray-Scott reaction-diffusion and Ginzburg-Landau equations, demonstrating accurate pattern formation capture and superior performance over traditional single-network approaches."
+keywords:
+  - Physics-Informed Neural Networks
+  - Coupled PDEs
+  - Reaction-Diffusion Systems
+  - Gray-Scott Equation
+  - Ginzburg-Landau Equation
+  - Deep Learning
+  - Scientific Computing
+  - Fourier Features
+  - Adaptive Loss Weighting
+license: Apache-2.0
+version: 1.0.0
+date-released: 2025-04-10
+references:
+  - type: thesis
+    authors:
+      - family-names: "Bhavsar"
+        given-names: "Rushir"
+    title: "Multi-Architecture Coupled Ensemble Physics-Informed Neural Networks"
+    institution:
+      name: "Arizona State University"
+    thesis-type: "Master's thesis"
+    year: 2025
+    url: "https://keep.lib.asu.edu/items/201211"
+    date-published: 2025-04-10

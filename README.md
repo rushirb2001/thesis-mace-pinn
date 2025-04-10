@@ -50,3 +50,37 @@ python src/visualization/generate_gifs.py
 
 ## Results
 Generated GIFs and comparison plots available in `data/output/`
+
+## Citation
+
+If you use this code in your research, please cite:
+```bibtex
+@mastersthesis{bhavsar2025mace,
+  author       = {Rushir Bhavsar},
+  title        = {Multi-Architecture Coupled Ensemble Physics-Informed Neural Networks},
+  school       = {Arizona State University},
+  year         = {2025},
+  month        = {April},
+  url          = {https://keep.lib.asu.edu/items/201211},
+  note         = {Defended April 10, 2025}
+}
+```
+
+Or cite the software directly:
+```bibtex
+@software{bhavsar2025mace_software,
+  author       = {Rushir Bhavsar},
+  title        = {MACE-PINN: Multi-Architecture Coupled Ensemble Physics-Informed Neural Networks},
+  year         = {2025},
+  publisher    = {GitHub},
+  url          = {https://github.com/rushirb2001/thesis-mace-pinn},
+  version      = {1.0.0},
+  license      = {Apache-2.0}
+}
+```
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+Copyright © 2024-2025 Rushir Bhavsar
