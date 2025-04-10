@@ -354,3 +354,12 @@ Adding generated data to repository structure:
 - Processed datasets (H5)
 
 Note: Large binary files tracked via git-lfs
+
+## April 2025
+
+### Thesis Defense - April 10, 2025
+Successfully defended thesis on Multi-Architecture Coupled Ensemble 
+Physics-Informed Neural Networks (MACE-PINN) for reaction-diffusion systems.
+
+Repository now published under Apache 2.0 license for open research and 
+educational use.
